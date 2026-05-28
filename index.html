@@ -1,107 +1,253 @@
-<!doctype html>
-<!-- bakery · warm-rustic · hero-layout 0 · svc-layout 0 · generated from live Google Places data for Nawlins Sweet Treats -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nawlins Sweet Treats — Bakery, Los Angeles</title>
-<meta name="description" content="Nawlins Sweet Treats — Bakery in Los Angeles.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- bakery · nola-mardi-gras · hero-layout 1 · svc-layout 1 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nawlins Sweet Treats — King Cakes in LA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fdf4e8;--surface:#fff;--ink:#3b2412;--mut:#7b5a44;--acc:#c83a5b;--line:#eed9c2}
+:root{
+  --purple:#5e2b8c;
+  --gold:#d4af37;
+  --green:#1a7a3e;
+  --ink:#2a1547;
+  --cream:#fdf6e3;
+  --paper:#fefae8;
+  --mute:#6b5c7a;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Fraunces',serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Fraunces',serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Fraunces',serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--paper);color:var(--ink);font-family:'Lora',serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.pf{font-family:'Playfair Display',serif}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Fraunces',serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Fraunces',serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* bunting top stripe */
+.bunting{height:14px;background:repeating-linear-gradient(90deg,
+  var(--purple) 0 60px, var(--gold) 60px 120px, var(--green) 120px 180px)}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Fraunces',serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Fraunces',serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
-</style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Nawlins Sweet Treats</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+13237597188">Call (323) 759-7188</a></div>
+/* nav */
+nav{padding:24px 0;background:var(--cream);border-bottom:3px double var(--purple)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:32px;color:var(--purple);letter-spacing:-.5px}
+.brand .y{color:var(--gold)}
+.brand .g{color:var(--green)}
+.callbtn{display:inline-block;background:var(--purple);color:var(--gold);font-weight:700;padding:12px 24px;border-radius:999px;text-decoration:none;font-family:'Playfair Display',serif;font-size:18px;letter-spacing:.5px;border:2px solid var(--gold)}
+.callbtn:hover{background:var(--gold);color:var(--purple)}
+
+/* hero */
+.hero{padding:80px 0 60px;background:linear-gradient(135deg, var(--purple) 0%, #4a1f70 50%, var(--purple) 100%);color:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 12% 20%, rgba(212,175,55,.16), transparent 35%),
+  radial-gradient(circle at 88% 80%, rgba(26,122,62,.18), transparent 35%);
+  pointer-events:none}
+.hero .row{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}
+.kicker{font-family:'Playfair Display',serif;font-style:italic;font-size:18px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(58px,8vw,108px);line-height:.95;letter-spacing:-2px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 span{color:#7fd99e}
+.hero .lede{margin-top:24px;font-size:19px;max-width:520px;color:#f3e8c8;line-height:1.6}
+.hero .badges{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.badge{padding:8px 18px;background:rgba(212,175,55,.15);border:1px solid var(--gold);border-radius:999px;font-size:13px;color:var(--gold);letter-spacing:1px;font-weight:600}
+.hero-photo{aspect-ratio:1/1;border-radius:50%;background:#999 center/cover no-repeat;border:8px solid var(--gold);box-shadow:0 0 0 4px var(--purple), 0 30px 80px rgba(0,0,0,.4)}
+
+/* parade ribbon */
+.ribbon{padding:22px 0;background:var(--gold);color:var(--purple);font-family:'Playfair Display',serif;font-weight:700;font-style:italic;text-align:center;font-size:22px;letter-spacing:1px;border-top:3px solid var(--purple);border-bottom:3px solid var(--purple)}
+.ribbon span{margin:0 22px;display:inline-block}
+.ribbon .dot{color:var(--green);font-style:normal}
+
+/* legend */
+.story{padding:100px 0;background:var(--cream)}
+.story .grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:center}
+.story .photo{aspect-ratio:4/5;background:#999 center/cover no-repeat;border-radius:8px;border:6px solid var(--gold);box-shadow:0 20px 60px rgba(94,43,140,.25)}
+.story .pre{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:var(--green);letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.story h2{font-family:'Playfair Display',serif;font-weight:900;font-size:60px;line-height:1;letter-spacing:-1px;color:var(--purple);margin-top:14px}
+.story h2 em{font-style:italic;color:var(--gold)}
+.story p{margin-top:22px;font-size:17px;color:#3a2055;line-height:1.7}
+.story p + p{margin-top:14px}
+
+/* king cakes — feature */
+.cakes{padding:100px 0;background:var(--purple);color:var(--cream)}
+.cakes .center{text-align:center;margin-bottom:60px}
+.cakes .pre{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.cakes h2{font-family:'Playfair Display',serif;font-weight:900;font-size:64px;color:var(--cream);letter-spacing:-1px;margin-top:12px}
+.cakes h2 em{color:var(--gold);font-style:italic}
+.cakegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.cake{background:var(--cream);color:var(--ink);padding:36px 30px;border-radius:8px;text-align:center;border:3px solid var(--gold);position:relative;overflow:hidden}
+.cake::after{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,
+  var(--purple) 0 30px, var(--gold) 30px 60px, var(--green) 60px 90px)}
+.cake h3{font-family:'Playfair Display',serif;font-weight:900;font-size:28px;color:var(--purple);margin-top:8px;letter-spacing:-.5px}
+.cake .serves{font-family:'Playfair Display',serif;font-style:italic;color:var(--green);font-size:15px;margin-top:6px;font-weight:700}
+.cake .price{font-family:'Playfair Display',serif;font-weight:900;font-size:42px;color:var(--gold);margin-top:14px;-webkit-text-stroke:1px var(--purple)}
+.cake p{margin-top:14px;font-size:14px;color:var(--mute);line-height:1.6}
+
+/* quotes — laissez les bon temps */
+.quotes{padding:100px 0;background:var(--cream)}
+.quotes .center{text-align:center;margin-bottom:60px}
+.quotes .pre{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:var(--green);letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.quotes h2{font-family:'Playfair Display',serif;font-weight:900;font-size:64px;color:var(--purple);letter-spacing:-1px;margin-top:12px}
+.quotes h2 em{color:var(--gold);font-style:italic}
+.qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.qcard{background:var(--paper);border:3px double var(--purple);padding:36px 32px;border-radius:6px;position:relative}
+.qcard::before{content:"❝";position:absolute;top:-14px;left:24px;background:var(--gold);color:var(--purple);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:30px;font-weight:900;border:3px solid var(--purple)}
+.qcard .stars{color:var(--gold);letter-spacing:3px;font-size:16px;margin-top:8px}
+.qcard .t{font-family:'Lora',serif;font-style:italic;font-size:17px;margin-top:14px;color:#2a1547;line-height:1.7}
+.qcard .who{margin-top:18px;font-family:'Playfair Display',serif;font-weight:700;color:var(--purple);font-size:14px;letter-spacing:1.5px;text-transform:uppercase}
+.qcard .who span{color:var(--green);font-weight:400;font-style:italic;text-transform:none;letter-spacing:0}
+
+/* visit */
+.visit{padding:100px 0;background:var(--purple);color:var(--cream)}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.visit .pre{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.visit h2{font-family:'Playfair Display',serif;font-weight:900;font-size:54px;letter-spacing:-1px;margin-top:12px;color:var(--cream)}
+.visit h2 em{color:var(--gold);font-style:italic}
+.visit .det{margin-top:32px;font-size:17px;line-height:1.8}
+.visit .det b{display:block;color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-weight:400;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:4px}
+.visit .det a{color:var(--gold);text-decoration:underline}
+.hourblk{background:rgba(212,175,55,.08);border:2px solid var(--gold);padding:36px;border-radius:8px}
+.hourblk h3{font-family:'Playfair Display',serif;font-style:italic;font-size:32px;color:var(--gold);text-align:center;margin-bottom:24px}
+.hr{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed rgba(212,175,55,.4);font-size:16px}
+.hr:last-child{border-bottom:none}
+.hr b{font-family:'Playfair Display',serif;color:var(--cream);font-weight:700}
+.hr span{color:#f3e8c8}
+
+/* footer */
+footer{padding:60px 0 40px;text-align:center;background:var(--ink);color:var(--cream)}
+footer .b{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:40px;color:var(--gold)}
+footer .b span{color:#7fd99e}
+footer .det{margin-top:14px;font-size:14px;color:#d4c5e8}
+footer .det a{color:var(--gold)}
+footer .credit{margin-top:36px;padding-top:24px;border-top:1px dashed rgba(212,175,55,.3);font-size:12px;color:#a89bc4}
+footer .credit a{color:var(--gold)}
+
+@media (max-width:880px){
+  .hero .row,.story .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .cakegrid,.qgrid{grid-template-columns:1fr}
+  .hero h1{font-size:54px}
+}
+</style>
+</head>
+<body>
+
+<div class="bunting"></div>
+
+<nav><div class="wrap row">
+  <div class="brand">Nawlins<span class="y"> · </span>Sweet<span class="g"> · </span>Treats</div>
+  <a class="callbtn" href="tel:+13237597188">☎ (323) 759-7188</a>
+</div></nav>
+
+<header class="hero"><div class="wrap row">
+  <div>
+    <div class="kicker">✶ Cynthia's Kitchen · South LA ✶</div>
+    <h1>Real <em>King Cake</em>,<br>made <span>in town</span>.</h1>
+    <p class="lede">Authentic Louisiana-yeast king cakes, baked fresh in Los Angeles for Mardi Gras parties, birthdays, and people who know better than to ship a cake across four states.</p>
+    <div class="badges">
+      <div class="badge">✦ Yeast-Style</div>
+      <div class="badge">✦ Cinnamon Crunch</div>
+      <div class="badge">✦ Feeds 70+</div>
+      <div class="badge">✦ Pre-Order</div>
+    </div>
+  </div>
+  <div class="hero-photo" style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZN4WqJRJiWxFol8Lz2nj1_hIn6J8_mznjs7GImz4wQjhm0l0=s1100')"></div>
 </div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">Made fresh, made local</span>
-    <h1 class="disp">Sweet, fresh,<br>every day.</h1>
-    <p class="lede">A neighborhood bakery that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+13237597188">Call (323) 759-7188</a><a class="btn" href="#visit">Hours &amp; location</a></div>
-  </div>
-  <img class="hero-img" src="https://lh3.googleusercontent.com/place-photos/AJRVUZN4WqJRJiWxFol8Lz2nj1_hIn6J8_mznjs7GImz4wQjhm0l0oAumx0mG-3My8zRydhpVwLrmYkHxmAUGGTnX9iEhZcc_bUvSerDhI0Z9qPuWarA1JAZeffVkOy96-MRTARIF-x_jD-iNNSUGDU=s4800-w1600" alt="Nawlins Sweet Treats">
-</div></div></section>
+<div class="ribbon">
+  <span>Laissez les bon temps rouler</span><span class="dot">✦</span>
+  <span>Pre-Order for Mardi Gras</span><span class="dot">✦</span>
+  <span>Open 7 Days</span><span class="dot">✦</span>
+  <span>(323) 759-7188</span>
+</div>
 
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">Made fresh, made local</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Fresh-baked daily</h3></div><div class="svc"><span class="snum">02</span><h3>Custom orders &amp; cakes</h3></div><div class="svc"><span class="snum">03</span><h3>Sweet &amp; savory</h3></div><div class="svc"><span class="snum">04</span><h3>Coffee &amp; treats</h3></div></div>
-</div></section>
-
-<section class="section gal-sec"><div class="wrap"><div class="kick">A look inside</div><h2>The place itself.</h2><div class="gallery"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNPRT24llz9oB4fKQ3f3BZtzXwRMvEEfjYvTzjAf5kxZeT7CEZsR-JgNFIkEn3ftjzHtlJ0zks1bjCg37dA7jHcdtAe9XhNEH62BXDwkNi9SFgUyTLWJbVU-7_FxYzRbuPMiLY-bytjy_OTCSU6_WKHtQ=s4800-w1600" alt="Nawlins Sweet Treats" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOQAWqjdScT2yW8yBQJWiKuCADIF-EMBAy0cAd_L4cXSDzQZejdjFQ3iWcRbhH8XmLEIuvs5o2gq4fe6SFCJvsly782ci61rQH63QfIVlvd5fg-2-0KulFe6fJCAwy-CofKxuDQ--O49o56cw=s4800-w1600" alt="Nawlins Sweet Treats" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMyI8w6HpeL_ebR_nF4cjSVaqfPSyH56p0caZRhKifT6zZ-9rsbMExpNzD6KZ602WWQZepB-qERfZ2jC80yVWBoEqjUU8tm9UXxpwcmmqbUN2dYK44X5IKzjmk7K24g9c62XxI4fqJUV8aZiOQ=s4800-w1600" alt="Nawlins Sweet Treats" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZM4x0Jz7PvMXpzTYW9ETQV_UldKl3S85fTcRVLjhSbKBcdm0uVIhlZXMD2JN_x_6sc17bKg7jjscZ6npM5wZAYuQwCG72ZWCPnLgielntxmakag5rl_S5uUMPtPOLUY0Vy0Q5FwjyXb7b9z=s4800-w1600" alt="Nawlins Sweet Treats" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPwr4wWTKOnOPsRU8r5Ek1BbIxAsfWh_KyEIECFMFoO6UkrzloqzVdp6j1c2fWb9Xf85nOqiTKlDVDdDvILTHPvthNGD9Q0SAZmwG1xa0MLo4p5exifUqKI5tRqfARUuTovBrmQ5supvxYoJkg=s4800-w1600" alt="Nawlins Sweet Treats" loading="lazy"></div></div></section>
-<section class="section"><div class="wrap"><div class="kick">In their words</div><h2>What people say.</h2><div class="quotes"><div class="q"><p>We love Cynthia and her king cakes! We got a large king cake from Cynthia for a Mardi Gras party and it was delicious. The large size fed more than 70 people (thin slices), and there were even a couple slices left over. We…</p><div class="who">— Jessica S.</div></div><div class="q"><p>Cynthia is such a kind person. Her and her son were communicative and flexible with some scheduling changes of mine. The decorations were exactly what I asked for and my daughter was SO happy with her Wicked themed king cake.…</p><div class="who">— Tara A.</div></div><div class="q"><p>What an incredible treat! We normally get our king cake sent in from New Orleans, but this was even better. We were so lucky to stumble on Mrs. Cynthia&#x27;s wonderful establishment! I think we&#x27;ve found our new regular spot!  The…</p><div class="who">— David L.</div></div><div class="q"><p>We had a king cake for our Mardi Gras themed party and it was AMAZING. We had a blast cutting it with the whole group and I was so impressed with how yummy it was— definitely put your slice in the microwave for 15 secs!</p><div class="who">— Abby T.</div></div></div></div></section>
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Nawlins.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+13237597188">Call (323) 759-7188</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=1942+W+85th+St,+Los+Angeles,+CA+90047,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">1942 W 85th St, Los Angeles, CA 90047, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+13237597188">(323) 759-7188</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">9:00 AM – 6:00 PM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">9:00 AM – 6:00 PM</span></div>
+<section class="story"><div class="wrap">
+  <div class="grid">
+    <div class="photo" style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZNPRT24llz9oB4fKQ3f3BZtzXwRMvEEfjYvTzjAf5kxZeT7C=s1000')"></div>
+    <div>
+      <div class="pre">— Meet Cynthia —</div>
+      <h2>The <em>real</em> deal,<br>nine miles from Crenshaw.</h2>
+      <p>Cynthia bakes the king cakes Los Angeles families used to fly in from New Orleans. Yeast dough. Cinnamon crunch running through the spiral. Purple, gold, and green colored sugar. The real thing.</p>
+      <p>She'll deck a cake for your Mardi Gras party, your daughter's birthday, your office, your church potluck — communicative, flexible, and always on time. Order ahead. She'll take care of the rest.</p>
     </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=1942+W+85th+St,+Los+Angeles,+CA+90047,+USA&output=embed" title="Map to Nawlins Sweet Treats"></iframe>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Nawlins Sweet Treats</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">1942 W 85th St, Los Angeles, CA 90047, USA</div>
+<section class="cakes"><div class="wrap">
+  <div class="center">
+    <div class="pre">— Our King Cakes —</div>
+    <h2>Three sizes. <em>One legend.</em></h2>
+  </div>
+  <div class="cakegrid">
+    <div class="cake"><h3>Small</h3><div class="serves">Serves 12 – 18</div><div class="price">$45</div><p>Birthdays, family dinners, weeknight surprises.</p></div>
+    <div class="cake"><h3>Medium</h3><div class="serves">Serves 25 – 40</div><div class="price">$75</div><p>Office parties, classrooms, krewes-in-training.</p></div>
+    <div class="cake"><h3>Large</h3><div class="serves">Serves 70+ (thin slices)</div><div class="price">$135</div><p>Full-blown Mardi Gras. Two-day notice preferred.</p></div>
+  </div>
+</div></section>
+
+<section class="quotes"><div class="wrap">
+  <div class="center">
+    <div class="pre">— What Folks Say —</div>
+    <h2>Laissez les <em>reviews</em> rouler.</h2>
+  </div>
+  <div class="qgrid">
+    <div class="qcard">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <div class="t">"We love Cynthia and her king cakes! Got a large king cake for a Mardi Gras party and it was delicious. The large size fed more than 70 people."</div>
+      <div class="who">Jessica S. <span>· Google</span></div>
+    </div>
+    <div class="qcard">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <div class="t">"Cynthia is such a kind person. She and her son were communicative and flexible with my scheduling changes. The decorations were exactly what I asked for and my daughter was SO happy."</div>
+      <div class="who">Tara A. <span>· Google</span></div>
+    </div>
+    <div class="qcard">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <div class="t">"What an incredible treat! We normally get our king cake sent in from New Orleans, but this was even better. So lucky to stumble on Mrs. Cynthia's wonderful establishment."</div>
+      <div class="who">David L. <span>· Google</span></div>
+    </div>
+    <div class="qcard">
+      <div class="stars">★ ★ ★ ★ ★</div>
+      <div class="t">"We usually have our king cakes flown in from NOLA but this year we found the perfect local option. Delicious New Orleans-style yeast cake with a nice sprinkling of cinnamon crunch."</div>
+      <div class="who">Kenneth J. <span>· Google</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">— Visit & Order —</div>
+      <h2>Come <em>on by</em>.</h2>
+      <div class="det">
+        <b>Find the Kitchen</b>
+        1942 W 85th St<br>Los Angeles, CA 90047
+        <br><br>
+        <b>Call to Order</b>
+        <a href="tel:+13237597188">(323) 759-7188</a>
+        <br><br>
+        <b>Best For</b>
+        Mardi Gras parties · birthdays · church potlucks · krewes large and small
+      </div>
+    </div>
+    <div class="hourblk">
+      <h3>Open Daily</h3>
+      <div class="hr"><b>Monday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Tuesday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Wednesday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Thursday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Friday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Saturday</b><span>9 AM – 6 PM</span></div>
+      <div class="hr"><b>Sunday</b><span>9 AM – 6 PM</span></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="bunting"></div>
+
+<footer>
+  <div class="b"><em>Nawlins</em> Sweet <span>Treats</span></div>
+  <div class="det">1942 W 85th St · Los Angeles · <a href="tel:+13237597188">(323) 759-7188</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
 </body></html>
